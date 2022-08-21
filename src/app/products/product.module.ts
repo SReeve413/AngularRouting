@@ -19,8 +19,7 @@ import { SharedModule } from '../shared/shared.module';
         children: [
           {
             path: '',
-            component: ProductListComponent
-
+            component: ProductListComponent,
           },
           {
             path: ':id',
@@ -35,21 +34,20 @@ import { SharedModule } from '../shared/shared.module';
               {
                 path: '',
                 redirectTo: 'info',
-                pathMatch: 'full'
+                pathMatch: 'full',
               },
               {
                 path: 'info',
-                component: ProductEditInfoComponent
+                component: ProductEditInfoComponent,
               },
               {
                 path: 'tags',
-                component: ProductEditTagsComponent
-              }
-            ]
+                component: ProductEditTagsComponent,
+              },
+            ],
           },
-        ]
-      }
-
+        ],
+      },
     ]),
   ],
   declarations: [
@@ -57,7 +55,7 @@ import { SharedModule } from '../shared/shared.module';
     ProductDetailComponent,
     ProductEditComponent,
     ProductEditInfoComponent,
-    ProductEditTagsComponent
+    ProductEditTagsComponent,
   ],
 })
 export class ProductModule {}
